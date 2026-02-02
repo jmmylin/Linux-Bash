@@ -1,0 +1,27 @@
+REPL = Read Eval Print Loop.
+Terminal works as a REPL
+Terminal is a program (For example, iterm2) and the terminal program is running a shell called BASH.
+The shell is the thing that is waiting for my commands.
+
+mv -> rename or move. If existing file with the same name it will overwrite the file. No warnings when this happens.
+
+rm -> has no warning and deletes permanently. (-i will ask you if you are sure.)
+Create an alias (rm='rm -i')
+
+Ctrl + L => Shortcut Clear
+
+history
+
+
+grep <search> <filepath>
+grep '^<search' <filepath> 	< To use regex in search.
+grep -A1 b file.txt		< find b and print 1 line AFTER
+grep -B1 b file.txt		< find b and print 1 line BEFORE
+grep -C1 b file.txt		< find b and print 1 line ABOVE and BELOW
+grep -i	b file.txt		< ignore case. So, b or B will match. This only prints the part that matches.
+
+
+echo hello > file.txt		< Writes hello in file.txt this would overwrite everything in file.txt with just hello.
+echo hello >> file.txt		< Append hello to the end of the file file.txt.
+
+cat file.txt | grep -i jim	< Pipe the output of cat file.txt into grep and search for the letters jim ignoring case.
